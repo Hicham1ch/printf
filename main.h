@@ -42,7 +42,7 @@ int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list, char buffer[], int flags, int width, int precision, int size);
 
-/**************FUNCTIONS**************/
+/************** FUNCTIONS **************/
 
 /* Functions to print chars and strings */
 int print_char(va_list types, char buffer[],
@@ -77,7 +77,7 @@ int print_non_printable(va_list types, char buffer[],
 int print_pointer(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
 
-/* Function to handle other specifiers */
+/* Functions to handle other specifiers */
 int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
@@ -98,12 +98,12 @@ int write_number(int is_positive, int ind, char buffer[],
 		int flags, int width, int precision, int size);
 int write_num(int ind, char bff[], int flags, int width, int precision,
 		int length, char padd, char extre_c);
-int write_pointer(char buffer[], int ind, int length, int width,
-		int flags, char padd, char extra_c, int padd_start);
+int write_pointer(char buffer[], int ind, int length,
+	int width, int flags, char padd, char extra_c, int padd_start);
 
 int write_unsgnd(int is_negative, int ind,
 char buffer[],
-int flags, int width, int precision, int size);
+	int flags, int width, int precision, int size);
 
 /************* UTILS ***********/
 
