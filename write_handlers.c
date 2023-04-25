@@ -80,7 +80,7 @@ int write_number(int is_negative, int ind, char buffer[],
 
 /**
  * write_num - Write a number using a buffer
- * @ind: Index at which the number strats on the buffer
+ * @ind: Index at which the number starts on the buffer
  * @buffer: Buffer
  * @flags: Flags
  * @width: width
